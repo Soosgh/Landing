@@ -50,7 +50,7 @@ body {
 .register {
     border: 2px solid #fff;
     color: #fff;
-    background-color: var(--main_color);
+    background-color: #545BE8;
     border-radius: 10px;
 }
 
@@ -210,13 +210,210 @@ body {
     color: #646464;
 }
 
-@media (max-width: 767.98px) {
-    .Testimonial {
-        width: 100%;
-    }
+/*-----------------------*/
+.register_ {
+    padding: 50px 0;
+    align-items: center;
+    background-color: #fff;
+
 
 }
 
+.register_ .publicity {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--Sub_Font);
+    gap: 22px;
+    width: calc((100% - 40px) / 2);
+}
+
+.register_ .publicity .begin {
+    color: var(--main_color);
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+
+
+.register_ .publicity .begin div:nth-child(2) {
+    font-weight: bold;
+}
+
+.register_ .publicity .finding_course {
+    font-family: var(--Sub_Font);
+    color: #000;
+    text-align: left;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.register_ .publicity .lorem_paragh {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+    font-family: var(--Sub_Font);
+    color: #646464a6
+}
+
+.register_ .publicity .register_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-top: 30px;
+
+}
+
+.register_ .publicity .register_btn .register_button {
+    padding: 20px 55px;
+    border-radius: 10px;
+    background-color: var(--main_color);
+
+
+}
+
+.register_ .publicity .register_btn .register_button a {
+    color: #fff;
+    font-weight: bold;
+    font-family: var(--Sub_Font);
+    font-size: 20px;
+
+}
+
+.register_ .publicity .register_btn .play_video {
+    padding: 20px 55px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.register_ .publicity .register_btn .play_video a {
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    font-family: var(--Sub_Font);
+    font-size: 20px;
+}
+
+.register_ .publicity .register_btn .play_video img {
+    width: 40px;
+    height: 40px;
+}
+
+.register_ .picture {
+    width: calc((100% - 40px) / 2);
+    text-align: left;
+}
+
+.register_ .picture img {
+    width: 606px;
+    height: 588px;
+}
+
+/*------------------*/
+.result {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.result .cards {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.result .cards .what_we_do {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.result .cards .what_we_do .blue_header {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: var(--Sub_Font);
+    color: var(--main_color);
+    text-align: left;
+}
+
+.result .cards .what_we_do .big_header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 55px;
+    font-family: var(--Sub_Font);
+
+}
+
+.result .cards .what_we_do .paragh_w_3line {
+
+    font-family: var(--main_Font);
+    color: #837f7f;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+.result .cards .card {
+    font-family: var(--Sub_Font);
+    border-radius: 9.118597984313965px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc((100% - 500px) / 3);
+    box-sizing: border-box;
+    padding: 40px 15px;
+    background-color: var(--main_color);
+}
+
+.result .cards .card .card_icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+}
+
+.result .cards .card .card_icon img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.result .cards .card .card_header {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: var(--Sub_Font);
+}
+
+.result .cards .card .card_para {
+    text-align: left;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: var(--main_Font)
+}
+
+.result .navigation {
+
+    box-sizing: border-box;
+    padding-right: 200px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 18px;
+}
+
+.result .navigation img {
+    width: 50px;
+    height: 50px;
+}
 
 @media (max-width: 460px) {
     .End-item {
@@ -257,6 +454,14 @@ body {
         width: calc((100% - 10px) /4);
     }
 
+    .Testimonial {
+        width: 100%;
+    }
+
+    .publicity,
+    .picture {
+        width: 100%;
+    }
 
 }
 
@@ -278,5 +483,6 @@ body {
         flex-wrap: wrap;
         flex-direction: column;
     }
+
 
 }
